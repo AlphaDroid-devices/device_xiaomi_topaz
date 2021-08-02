@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
     SystemUIResTopaz \
     TelecommResCommon \
     TelephonyResCommon \
-    WifiResTopaz
+    WifiResTopaz \
+    NotchBarKiller
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
