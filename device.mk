@@ -94,6 +94,11 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+# Google Dialer Call recording
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery
