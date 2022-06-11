@@ -31,6 +31,9 @@ debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 
+# Render
+debug.cpurend.vsync=false
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.vendor.data.mode=concurrent
