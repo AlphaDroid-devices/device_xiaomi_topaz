@@ -55,7 +55,10 @@ PRODUCT_COPY_FILES += \
 # Bluetooth Audio (System-side HAL, sysbta)
 PRODUCT_PACKAGES += \
     audio.sysbta.default \
-    android.hardware.bluetooth.audio-service-system
+    android.hardware.bluetooth.audio-service-system \
+    libldacBT_abr \
+    libldacBT_bco \
+    libldacBT_enc
 
 # Boot control
 PRODUCT_PACKAGES += \
