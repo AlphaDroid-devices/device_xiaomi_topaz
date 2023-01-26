@@ -1,3 +1,6 @@
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Charger
 ro.charger.enable_suspend=1
 
