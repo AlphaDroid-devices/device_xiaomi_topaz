@@ -8,3 +8,5 @@ on post-fs
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
     # Override libgf_hal.so
     mount none /system/lib64/libgf_hal.so.patched /vendor/lib64/libgf_hal.so bind
+    # Override default thermal to fix QC
+    mount none /system/etc/thermal-normal.conf /vendor/etc/thermal-normal.conf bind

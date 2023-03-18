@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilts/libgf_hal.so.patched:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_hal.so.patched
 
+# Fix thermal QC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/thermal/thermal-normal.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/thermal-normal.conf
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
@@ -152,7 +156,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.qcom.rc
-
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
