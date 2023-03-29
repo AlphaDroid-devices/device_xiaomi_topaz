@@ -140,6 +140,7 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     SystemUIResTopaz \
     TelecommResCommon \
+    SimpleDeviceConfig \
     TelephonyResCommon \
     WifiResTopaz \
     NotchBarKiller
