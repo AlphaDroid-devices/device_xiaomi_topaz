@@ -53,3 +53,9 @@ persist.vendor.sensors.enable.mag_filter=true
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=0
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Gboard side padding
+ro.com.google.ime.kb_pad_port_l=4
+ro.com.google.ime.kb_pad_port_r=4
+ro.com.google.ime.kb_pad_land_l=64
+ro.com.google.ime.kb_pad_land_r=64
