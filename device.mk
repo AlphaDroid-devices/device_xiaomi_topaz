@@ -152,6 +152,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Properties
 include $(DEVICE_PATH)/configs/properties/default.mk
 
