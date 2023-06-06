@@ -143,7 +143,9 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
     TelephonyResCommon \
     WifiResTopaz \
-    NotchBarKiller
+    NotchBarKiller \
+    SettingsLibCommon
+
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
