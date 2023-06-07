@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     TetheringResCommon \
     WifiResTopaz \
     NotchBarKiller \
-    SettingsLibCommon
+    SettingsLibCommon \
+    BoostFrameworkOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
