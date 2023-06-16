@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=marble
+DEVICE=topaz
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

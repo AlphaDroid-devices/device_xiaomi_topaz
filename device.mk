@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/topaz/topaz-vendor.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-DEVICE_PATH := device/xiaomi/marble
+DEVICE_PATH := device/xiaomi/topaz
 
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-Marble
+    DT2W-Service-Topaz
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -102,21 +102,21 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureResMarble \
+    ApertureResTopaz \
     CarrierConfigResCommon \
     FrameworksResCommon \
-    FrameworksResMarble \
+    FrameworksResTopaz \
     SettingsOverlayGlobal \
     SettingsOverlayIndia \
     SettingsOverlayChina \
     SettingsResCommon \
-    SettingsResMarble \
+    SettingsResTopaz \
     SystemUIResCommon \
-    SystemUIResMarble \
+    SystemUIResTopaz \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
-    WifiResMarble
+    WifiResTopaz
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

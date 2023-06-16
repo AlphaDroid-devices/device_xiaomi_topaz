@@ -11,12 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from marble device.
-$(call inherit-product, device/xiaomi/marble/device.mk)
+# Inherit from topaz device.
+$(call inherit-product, device/xiaomi/topaz/device.mk)
 
-## Device identifier
-PRODUCT_DEVICE := marble
-PRODUCT_NAME := lineage_marble
+# Device identifier
+PRODUCT_NAME := lineage_topaz
+PRODUCT_DEVICE := topaz
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi Note 12 4G
 PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS

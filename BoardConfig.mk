@@ -5,7 +5,7 @@
 #
 
 # Inherit from the proprietary version
--include vendor/xiaomi/marble/BoardConfigVendor.mk
+-include vendor/xiaomi/topaz/BoardConfigVendor.mk
 
 # A/B
 AB_OTA_UPDATER := true
@@ -49,7 +49,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Bootloader
 PRODUCT_PLATFORM := taro
-TARGET_BOOTLOADER_BOARD_NAME := marble
+TARGET_BOOTLOADER_BOARD_NAME := topaz
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -61,8 +61,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_DENSITY := 440
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_marble
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_marble
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_topaz
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_topaz
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -120,8 +120,8 @@ BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITIO
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
-BOARD_PREBUILT_ODMIMAGE := vendor/xiaomi/marble/prebuilts/odm.img
-BOARD_PREBUILT_VENDORIMAGE := vendor/xiaomi/marble/prebuilts/vendor.img
+BOARD_PREBUILT_ODMIMAGE := vendor/xiaomi/topaz/prebuilts/odm.img
+BOARD_PREBUILT_VENDORIMAGE := vendor/xiaomi/topaz/prebuilts/vendor.img
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
