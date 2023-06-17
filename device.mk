@@ -119,16 +119,10 @@ PRODUCT_PACKAGES += \
     SystemUIResTopaz \
     TelecommResCommon \
     TelephonyResCommon \
-    WifiResCommon \
     WifiResTopaz
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-#PRODUCT_BUILD_SUPER_PARTITION := true
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Power
 PRODUCT_PACKAGES += \
