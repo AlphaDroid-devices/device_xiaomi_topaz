@@ -44,6 +44,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
+# Audio Configs
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
+
 # Bluetooth Audio (System-side HAL, sysbta)
 PRODUCT_PACKAGES += \
     audio.sysbta.default \
