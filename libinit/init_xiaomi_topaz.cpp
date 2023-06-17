@@ -10,50 +10,36 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT_GL "POCO/topaz_global/topaz:13/SKQ1.221022.001/V14.0.1.0.TMRMIXM:user/release-keys"
-#define FINGERPRINT_CN "Xiaomi/topaz/topaz:13/SKQ1.221022.001/V14.0.19.0.TMRCNXM:user/release-keys"
-#define FINGERPRINT_IN "POCO/topazin/topazin:13/SKQ1.221022.001/V14.0.1.0.TMRMIXM:user/release-keys"
+#define FINGERPRINT_M7N "Redmi/topaz_global/topaz:13/TKQ1.221114.001/V14.0.3.0.TMGMIXM:user/release-keys"
+#define FINGERPRINT_M7G "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V14.0.9.0.TMTMIXM:user/release-keys"
 
 static const variant_info_t topaz_global_info = {
-    .hwc_value = "GL",
-    .sku_value = "",
+    .hwc_value = "Global",
+    .sku_value = "m7n",
 
-    .brand = "POCO",
+    .brand = "REDMI",
     .device = "topaz",
-    .marketname = "POCO F5",
-    .model = "23049PCD8G",
+    .marketname = "REDMI NOTE 12 4G NFC",
+    .model = "23021RAA2Y",
     .mod_device = "topaz_global",
-    .build_fingerprint = FINGERPRINT_GL,
+    .build_fingerprint = FINGERPRINT_M7N,
 };
 
-static const variant_info_t topazin_info = {
-    .hwc_value = "IN",
-    .sku_value = "",
+static const variant_info_t tapas_global_info = {
+    .hwc_value = "Global",
+    .sku_value = "m7g",
 
-    .brand = "POCO",
-    .device = "topazin",
-    .marketname = "POCO F5",
-    .model = "23049PCD8I",
-    .mod_device = "topaz_in_global",
-    .build_fingerprint = FINGERPRINT_IN,
-};
-
-static const variant_info_t topaz_info = {
-    .hwc_value = "",
-    .sku_value = "",
-
-    .brand = "Xiaomi",
-    .device = "topaz",
-    .marketname = "Redmi Note 12 Turbo",
-    .model = "23049RAD8C",
-    .mod_device = "topaz",
-    .build_fingerprint = FINGERPRINT_CN,
+    .brand = "REDMI",
+    .device = "tapas",
+    .marketname = "REDMI NOTE 12 4G",
+    .model = "23021RAAEG",
+    .mod_device = "tapas_global",
+    .build_fingerprint = FINGERPRINT_M7G,
 };
 
 static const std::vector<variant_info_t> variants = {
     topaz_global_info,
-    topazin_info,
-    topaz_info,
+    tapas_global_info,
 };
 
 void vendor_load_properties() {
