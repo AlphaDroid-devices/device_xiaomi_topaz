@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DT2W-Service-Topaz
 
+# Fingerprint hal patched
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilts/libgf_hal.so.patched:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_hal.so.patched
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \

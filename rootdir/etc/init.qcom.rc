@@ -6,3 +6,5 @@ on property:persist.sys.topaz.dt2w=1
 on post-fs
     # Override stock audio_policy_configuration.xml
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
+    # Override libgf_hal.so
+    mount none /system/lib64/libgf_hal.so.patched /vendor/lib64/libgf_hal.so bind
