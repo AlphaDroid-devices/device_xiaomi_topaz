@@ -14,6 +14,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from topaz device.
 $(call inherit-product, device/xiaomi/topaz/device.mk)
 
+# Flags rom
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier
 PRODUCT_NAME := lineage_topaz
 PRODUCT_DEVICE := topaz
