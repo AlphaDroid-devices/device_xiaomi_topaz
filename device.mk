@@ -57,8 +57,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Boot control
 PRODUCT_PACKAGES += \
