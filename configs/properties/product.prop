@@ -1,7 +1,8 @@
 # Audio
 ro.config.vc_call_vol_steps=11
 ro.config.media_vol_steps=25
-  
+ro.audio.ignore_effects=true
+
 # Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
