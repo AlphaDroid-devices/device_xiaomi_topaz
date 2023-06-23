@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilts/libgf_hal.so.patched:$(TARGET_COPY_OUT_SYSTEM)/lib64/libgf_hal.so.patched
 
+# FUSE passthrough
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # Fix thermal QC
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal/thermal-normal.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/thermal-normal.conf
