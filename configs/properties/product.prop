@@ -26,12 +26,6 @@ bluetooth.profile.sap.server.enabled?=false
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
-# Radio
-persist.vendor.radio.hidl_dev_service=true
-
-# Sensors
-persist.vendor.sensors.enable.mag_filter=true
-
 # Google Photos
 debug.photos.eraser_camo=1
 debug.photos.eraser_suggestion=1
@@ -48,3 +42,14 @@ persist.sys.fw.trim_enable_memory?=2147483648
 persist.sys.fw.bservice_age?=120000
 persist.sys.fw.bservice_limit?=6
 persist.sys.fw.bservice_enable?=true
+
+# Radio
+persist.vendor.radio.hidl_dev_service=true
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# SurfaceFlinger
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=0
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
