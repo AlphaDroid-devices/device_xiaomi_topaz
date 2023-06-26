@@ -38,7 +38,7 @@
         android:persistent="true">
 
         <receiver android:name=".BootCompletedReceiver" android:exported="true">
-            <intent-filter android:priority="1000" android:priority="1000">
+            <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
