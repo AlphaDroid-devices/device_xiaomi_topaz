@@ -16,6 +16,3 @@ type pps_socket, file_type;
 #sysfs
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
-
-# Thermal
-type vendor_thermal_data_file, file_type, data_file_type;
