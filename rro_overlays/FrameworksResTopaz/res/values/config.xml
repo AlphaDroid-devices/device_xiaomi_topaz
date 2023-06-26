@@ -483,4 +483,7 @@
 
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
 </resources>
