@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AospWifiResOverlayTopaz \
     ApertureResTopaz \
     CarrierConfigResCommon \
     FrameworksResCommon \
