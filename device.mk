@@ -54,10 +54,6 @@ PRODUCT_PACKAGES += \
     audio.sysbta.default \
     android.hardware.bluetooth.audio-service-system
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
@@ -99,7 +95,6 @@ PRODUCT_PACKAGES += \
 # Google Dialer Call recording
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
-
 
 # Health
 PRODUCT_PACKAGES += \
@@ -145,7 +140,6 @@ PRODUCT_PACKAGES += \
     WifiResTopaz \
     NotchBarKiller \
     SettingsLibCommon
-
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
