@@ -98,12 +98,12 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 BOARD_PREBUILT_SYSTEM_DLKMIMAGE := $(DEVICE_PATH)/prebuilts/system_dlkm.img
+
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -231,6 +231,12 @@ BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml
+
+ifeq ($(PRODUCT_NAME), lineage_topaz)
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest-lineage.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix-lineage.xml
+endif
 
 # VNDK
 BOARD_VNDK_VERSION := current
