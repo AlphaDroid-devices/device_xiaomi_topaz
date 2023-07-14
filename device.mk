@@ -122,10 +122,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-# MultiGen LRU
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.mglru_native.lru_gen_config=all
-
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -221,10 +217,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-# USAP Pool
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
