@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "SettingsOverlayChina",
+    name: "SettingsOverlayM7L",
     product_specific: true,
 }

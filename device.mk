@@ -136,9 +136,10 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTopaz \
-    SettingsOverlayGlobal \
-    SettingsOverlayIndia \
-    SettingsOverlayChina \
+    SettingsOverlayM7G \
+    SettingsOverlayM7N \
+    SettingsOverlayM7L \
+    SettingsOverlayM7IN \
     SettingsResCommon \
     SettingsResTopaz \
     SystemUIResCommon \
