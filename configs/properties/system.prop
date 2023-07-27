@@ -24,6 +24,9 @@ persist.debug.ftrace_events_disable=Yes
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
+# Display
+qemu.sf.lcd_density=390
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
