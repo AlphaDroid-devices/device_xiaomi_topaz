@@ -10,6 +10,7 @@ persist.sys.brightness.low.gamma=true
 
 # Bluetooth
 persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
 
 # Charger
 ro.charger.enable_suspend=1
