@@ -71,6 +71,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Boot Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Dtb
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilts/dtb:dtb.img
@@ -161,6 +166,16 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+#PRODUCT_BUILD_SUPER_PARTITION := true
+
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+# Perf
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.Performance.xml \
+    $(DEVICE_PATH)/configs/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.UxPerformance.xml
 
 # Power
 PRODUCT_PACKAGES += \
@@ -218,6 +233,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0
 
 # Update engine
 PRODUCT_PACKAGES += \
