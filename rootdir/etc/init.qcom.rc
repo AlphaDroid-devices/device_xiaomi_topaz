@@ -1,8 +1,15 @@
 on property:persist.sys.topaz.dt2w=0
+    # topaz
     exec /system/bin/sendevent /dev/input/event5 0 1 4
+    # tapas
+    exec /system/bin/sendevent /dev/input/event4 0 1 4
 
 on property:persist.sys.topaz.dt2w=1
+    # topas
     exec /system/bin/sendevent /dev/input/event5 0 1 5
+    # tapas
+    exec /system/bin/sendevent /dev/input/event4 0 1 5
+
 on post-fs
     # Override stock audio_policy_configuration.xml
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
