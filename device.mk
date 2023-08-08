@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     SimpleDeviceConfig \
     TelephonyResCommon \
+    TetheringResCommon \
     WifiResTopaz \
     NotchBarKiller \
     SettingsLibCommon
