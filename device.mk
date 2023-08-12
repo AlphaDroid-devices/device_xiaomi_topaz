@@ -17,6 +17,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup.
 $(call inherit-product-if-exists, vendor/xiaomi/topaz/topaz-vendor.mk)
 
+# MiuiCamera
+TARGET_INCLUDES_MIUI_CAMERA := true
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
