@@ -10,6 +10,10 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 product/etc/device_features/tapas.xml|c30bb30eecf968e02f72c055d3cc13a7f769644f
 product/etc/device_features/topaz.xml
 
+# Fingerprint
+system_ext/lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
+
 # DisplayFeature
 system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
