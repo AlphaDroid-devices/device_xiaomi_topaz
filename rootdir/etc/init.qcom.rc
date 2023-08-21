@@ -17,3 +17,5 @@ on post-fs
     mount none /system/lib64/libgf_hal.so.patched /vendor/lib64/libgf_hal.so bind
     # Override default thermal to fix QC
     mount none /system/etc/thermal-normal.conf /vendor/etc/thermal-normal.conf bind
+    # Override stock audio_policy_configuration.xml
+    mount none /system/etc/excluded-input-devices.xml /vendor/etc/excluded-input-devices.xml bind
