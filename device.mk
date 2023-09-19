@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AospWifiResOverlayTopaz \
     ApertureResTopaz \
     CarrierConfigResCommon \
     FrameworksResCommon \
@@ -163,10 +162,10 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
     TelephonyResCommon \
     TetheringResCommon \
-    WifiResTopaz \
     NotchBarKiller \
     SettingsLibCommon \
-    BoostFrameworkOverlay
+    BoostFrameworkOverlay \
+    WifiOverlayTopaz
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
