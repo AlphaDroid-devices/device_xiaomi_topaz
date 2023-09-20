@@ -9,3 +9,7 @@ soong_namespace {
         "hardware/qcom-caf/bootctrl",
     ],
 }
+
+cc_library_shared {
+    name: "libldacBT_bco",
+}
