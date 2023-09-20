@@ -53,9 +53,6 @@ TARGET_USES_UEFI := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-# Camera
-TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
-
 # Display
 TARGET_SCREEN_DENSITY := 390
 
@@ -240,7 +237,9 @@ SOONG_CONFIG_XIAOMI_VIBRATOR := USE_EFFECT_STREAM
 SOONG_CONFIG_XIAOMI_VIBRATOR_USE_EFFECT_STREAM := true
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/configs/vintf/compatibility_matrix.device.xml \
+    vendor/lineage/config/device_framework_matrix.xml
 
 ifeq ($(PRODUCT_NAME), lineage_topaz)
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest-lineage.xml

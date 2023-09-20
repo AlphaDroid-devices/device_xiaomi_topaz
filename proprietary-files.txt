@@ -170,3 +170,11 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Camera
+system/lib/libhidltransport.so
+system/lib/libui.so
+system/lib64/libhidltransport.so
+system/lib64/libui.so
+vendor/lib/libhidltransport.so
+vendor/lib64/libhidltransport.so

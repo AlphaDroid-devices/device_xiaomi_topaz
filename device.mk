@@ -18,8 +18,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/topaz/topaz-vendor.mk)
 
 # MiuiCamera
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
 TARGET_INCLUDES_MIUI_CAMERA := true
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -63,6 +64,14 @@ PRODUCT_PACKAGES += \
     libldacBT_abr \
     libldacBT_bco \
     libldacBT_enc
+
+# Camera Legacy HIDL deps
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0 \
+    android.hidl.manager@1.0.vendor \
+    android.hidl.memory.block@1.0 \
+    android.hidl.memory.block@1.0.vendor \
+    android.hidl.memory@1.0-impl
 
 # Boot control
 PRODUCT_PACKAGES += \
