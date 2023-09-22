@@ -24,7 +24,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Device identifier
 PRODUCT_NAME := lineage_topaz
 PRODUCT_DEVICE := topaz
-PRODUCT_BRAND := Redmi
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 12 4G
 PRODUCT_MANUFACTURER := Xiaomi
 

@@ -17,9 +17,9 @@ static const variant_info_t topaz_global_info = {
     .hwc_value = "Global",
     .sku_value = "m7n",
 
-    .brand = "REDMI",
+    .brand = "Xiaomi",
     .device = "topaz",
-    .marketname = "REDMI NOTE 12 4G NFC",
+    .marketname = "Redmi Note 12 4G NFC",
     .model = "23021RAA2Y",
     .mod_device = "topaz_global",
     .build_fingerprint = FINGERPRINT_M7N,
@@ -29,9 +29,9 @@ static const variant_info_t tapas_global_info = {
     .hwc_value = "Global",
     .sku_value = "m7g",
 
-    .brand = "REDMI",
+    .brand = "Xiaomi",
     .device = "tapas",
-    .marketname = "REDMI NOTE 12 4G",
+    .marketname = "Redmi Note 12 4G",
     .model = "23021RAAEG",
     .mod_device = "tapas_global",
     .build_fingerprint = FINGERPRINT_M7G,
