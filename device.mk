@@ -89,6 +89,11 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+# Audio Configs
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/camera/lib/libhidltransport.so:$(TARGET_COPY_OUT_SYSTEM)/etc/lib/libhidltransport.so \
+    $(DEVICE_PATH)/configs/camera/lib64/libhidltransport.so:$(TARGET_COPY_OUT_SYSTEM)/etc/lib64/libhidltransport.so
+
 # Dtb
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/prebuilts/dtb:dtb.img
