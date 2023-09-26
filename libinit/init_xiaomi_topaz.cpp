@@ -10,8 +10,8 @@
 
 #include "vendor_init.h"
 
-#define FINGERPRINT_M7N "Redmi/topaz_global/topaz:13/TKQ1.221114.001/V14.0.5.0.TMGMIXM:user/release-keys"
-#define FINGERPRINT_M7G "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V14.0.12.0.TMTMIXM:user/release-keys"
+#define FINGERPRINT_M7N "Redmi/topaz_global/topaz:13/TKQ1.221114.001/V14.0.7.0.TMGMIXM:user/release-keys"
+#define FINGERPRINT_M7G "Redmi/tapas_global/tapas:13/TKQ1.221114.001/V14.0.14.0.TMTMIXM:user/release-keys"
 
 static const variant_info_t topaz_global_info = {
     .hwc_value = "Global",
