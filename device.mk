@@ -193,7 +193,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
+    libgrpc++_unsecure.vendor
 
 # Properties
 include $(DEVICE_PATH)/configs/properties/default.mk
